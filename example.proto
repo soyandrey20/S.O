@@ -5,6 +5,7 @@ package example;
 service MathService {
   rpc Add (AddRequest) returns (AddResponse);
   rpc Multiply (MultiplyRequest) returns (MultiplyResponse);
+  
 }
 
 message AddRequest {

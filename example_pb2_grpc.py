@@ -74,6 +74,7 @@ def add_MathServiceServicer_to_server(servicer, server):
                     request_deserializer=example__pb2.MultiplyRequest.FromString,
                     response_serializer=example__pb2.MultiplyResponse.SerializeToString,
             ),
+
     }
     generic_handler = grpc.method_handlers_generic_handler(
             'example.MathService', rpc_method_handlers)
