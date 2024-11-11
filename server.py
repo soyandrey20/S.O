@@ -25,6 +25,7 @@ def serve():
     calculator_pb2_grpc.add_CalculatorServicer_to_server(CalculatorServicer(), server)
     server.add_insecure_port('[::]:50051')
     server.start()
+    print ('Servidor corriendo en el puerto 50051')
     server.wait_for_termination()
 
 if __name__ == '__main__':
